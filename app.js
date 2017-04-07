@@ -18,7 +18,7 @@ function renderSearchResult(data) {
 
 function renderNutrient(nutrientData) {
 //wrap in span to do styling for below
-    return '<li class="nutrient-item js-nutrient-item">' + nutrientData.name + " " + nutrientData.value + "</li>"
+    return '<li class="nutrient-item js-nutrient-item">' + nutrientData.name + ": " + nutrientData.value + "</li>"
 
 }
 
