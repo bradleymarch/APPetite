@@ -5,45 +5,42 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Cabin|Russo+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Wire+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
   <link rel="icon" type="image/png" href="icon.ico"/>
 </head>
-<div id="first">
-  <div id="second">
-    <body>
-      <a class=home-link href="https://bradleymarch.github.io/capstone1/">
-        <nav class="logo">APPetite.<br><h3>What's in my food?</h3></nav>
-      </a>
 
-      <section class="view js-home-view">
-        <h1>APPetite.</h1>
-        <h2>THE FASTEST FOOD FACT FINDER.</h2>
-        <form class="search-form js-search-form">
-         <input class="js-search-text search-text" type="text" name="food-finder" placeholder="SEARCH ANY FOOD">
-         <button class="js-search-button search-button" type="submit">GO!</button>
-       </form>
-
-       <!-- <h3 class="food-name-title js-food-name-title hidden">SEARCH RESULTS</h3> -->
-       <ul class="search-results js-search-results hidden">
-       <!-- empty ul for search results -->
-      </ul>
-    </section>
-    <section class="view js-details-view hidden">
-      <h2 class="food-name-title js-food-name-title"></h2>
-      <ul class="nutrient-details js-nutrient-details">
-       
-
-
-       <!-- change out the link below, goes nowhere
-       <a class="vitamin-link js-view-details-view" href="https://api.nal.usda.gov/ndb/search/?format=json&sort=n&max=10&offset=0&api_key=API_KEY">Vitamins?</a> -->
-     </ul>
-   </section>
-
-
-
-
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-   <script type="text/javascript" src='app.js'></script>
- </body>
-</div>
-</div>
+<body>
+  <nav class="site-nav">
+    <div class="site-branding">
+      <span class="logo">
+        <a href="/" class="home-link">APPetite</a>
+      </span>
+      <span class="logo-subtitle">What's in my food?</span>
+    </div>
+  </nav>
+  
+  <section class="view js-home-view overlay-search-bar">
+    <h1>APPetite.</h1>
+    <h2>THE FASTEST FOOD FACT FINDER.</h2>
+    <h3>Real nutrient info from the USDA Nutrient Database</h3>
+    <form class="search-form js-search-form">
+     <input class="js-search-text search-text" type="text" name="food-finder" placeholder="SEARCH ANY FOOD">
+     <button class="js-search-button search-button" type="submit">GO!</button>
+   </form>
+   
+   <!-- <h3 class="food-name-title js-food-name-title hidden">SEARCH RESULTS</h3> -->
+   <ul class="search-results js-search-results hidden overlay">
+     <!-- empty ul for search results -->
+   </ul>
+ </section>
+ <section class="view js-details-view hidden overlay">
+  <h2 class="food-name-title js-food-name-title"></h2>
+  <button class="back-to-search-results js-back-to-search-results back-button js-back-button">BACK TO SEARCH RESULTS</button>
+  <ul class="nutrient-details js-nutrient-details">
+  </ul>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src='app.js'></script>
+</body>
 </html>

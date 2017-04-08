@@ -4,13 +4,24 @@ html {
 
 	font-family: 'Russo One', sans-serif;
 	background-color: #008080;
-	 background: url("dining.jpg") no-repeat center center fixed;
+	background: url("dining.jpg") no-repeat center center fixed;
 	-webkit-animation: fadein 2s;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+}
 
+
+.overlay {
+
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.75);
+	margin: auto;
+	border-radius: 40px;
+	padding: 10px;
+	box-sizing: border-box;
 
 }
 
@@ -23,69 +34,56 @@ html {
 	from { opacity: 0; }
 	to   { opacity: 1; }
 }
-/*seems to make no difference on the media query
-@media only screen and (max-width: 768px) {
 
-
-	.search-text {
-		width: 50%;
-	}
-
-	ul {
-		padding-left: 10%;
-		padding-top: 10%;
-	}
-	.search-form {
-		margin-left: 4%;
-	}
-
-	nav {
-		width: 33%;
-	}
-	.search-button {
-		width: 10%;
-	}
-}
-*/
 
 .search-results-item {
-		margin: auto;
-	}
+	margin: auto;
+}
 
 .search-form {
 	text-align: center;
 	margin-left: 16px;
-}
+	padding-bottom: 10px;
 
-.food-name-title {
-
-	font-size: 48px;
-	color: #4FFBEF; 
 }
 
 .nutrient-details, .search-results {
 
 	list-style-type: none;
 	box-sizing: border-box;
-	position: relative;
-	padding-top: 40px;
+	padding: 40px;
 	margin: auto;
 	text-align: center;
+	max-width: 85%;
 }
+
+.search-results {
+	cursor: pointer;
+}
+
 
 .search-results-item, .nutrient-item {
 	padding-bottom: 20px;
-	color: #4FFBEF;
-	font-size: 24px;
-	text-shadow: -1px 0 teal, 0 1px teal, 1px 0 teal, 0 -1px teal;
 	margin: auto;
+	color: #4FFBEF; 
+
 }
 
-.search-results-item {
+.nutrient-item { 
+	color: white;
+	font-size: 54px;
+	font-weight: bold;
+	font-family: 'Wire One', sans-serif;
+	display: block;
 
-	cursor: pointer; 
-	cursor: hand;
+}
+.search-results-item {
+	cursor: pointer;
 	text-decoration: none;
+	font-size: 48px;
+	font-family: 'Wire One', sans-serif;
+	display: block;
+
 
 }
 
@@ -94,19 +92,36 @@ html {
 }
 
 .logo {
-
-	text-align: left;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
 	box-sizing: border-box;
-	padding: 15px;
+	padding-left: 15px;
 	font-weight: bold;
 	color: #4FFBEF;
-	font-size: 24px;
+	font-size: 28px;
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+
+}
+
+.logo-subtitle {
+	display: inline-block;
+	font-family: 'Wire One', sans-serif;
+	text-align: center;
+	text-decoration: none;
+	box-sizing: border-box;
+	padding-left: 15px;
+	padding-bottom: 15px;
+	font-weight: bold;
+	color: white;
+	font-size: 28px;
 
 }
 
 .home-link {
 	text-decoration: none;
+	color: #4FFBEF;
 }
 
 .search-text {
@@ -117,8 +132,6 @@ html {
 	font-family: 'Russo One', sans-serif;
 	width: 200px;
 
-
-
 }
 
 .search-text:focus {
@@ -127,6 +140,7 @@ html {
 
 nav {
 	width: 150px;
+	padding-right: ;
 
 }
 
@@ -134,13 +148,15 @@ nav {
 
 	font-size: 20px;
 	border-radius: 20px;
-	color: teal;
-	background-color: #ECF1F0;
+	color: #4FFBEF;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	background-color: #F4F8F8;
 	width: 76px;
 	font-family: 'Russo One', sans-serif;
 	transition: all .1s linear;
 	box-shadow: 0 3px 0 teal;
 	box-sizing: border-box;
+	padding-bottom: 10px;
 }
 
 .search-button:active {
@@ -150,9 +166,42 @@ nav {
 
 }
 
+.back-button {
+	font-size: 16px;
+	border-radius: 20px;
+	color: #4FFBEF;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	background-color: #F4F8F8;
+	font-family: 'Russo One', sans-serif;
+	transition: all .1s linear;
+	box-shadow: 0 3px 0 teal;
+	box-sizing: border-box;
+	margin: 30px auto 0;
+	display: block;
+}
+
+
+.back-button:active {
+
+	box-shadow: 0 1px 0 teal;
+	transform: translateY(2px);
+}
+
+.back-button:focus {
+	outline: none;
+}
+
 .food-name-title {
 
+	padding: 20px;
+	margin: auto;
 	text-align: center;
+	max-width: 90%;
+	font-size: 52px;
+	color: teal; 
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-weight: bold;
+
 }
 
 .search-button:focus {
@@ -160,16 +209,17 @@ nav {
 }
 
 h1 {
-	font-size: 72px;
+	font-size: 80px;
 	color: #4FFBEF; 
 	text-align: center;
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	margin: 40px;
 
 }
 
 h2 {
 
-	font-size: 16px;
+	font-size: 24px;
 	color: white;
 	text-align: center;
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -184,8 +234,9 @@ form {
 h3 {
 
 	color: white;
-	font-size: 12px;
-	font-style: italic;
+	font-size: 46px;
+	font-family: 'Wire One', sans-serif;
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	text-align: center;
 
 }

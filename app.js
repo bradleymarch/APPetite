@@ -11,15 +11,14 @@ $(function() {
     searchResults: []
 
   };
-function renderSearchResult(data) {
+  function renderSearchResult(data) {
     return '<li class="search-results-item js-search-results-item" data-ndbno="' + data.ndbno +
     '">' + data.name + '</li>';
   }
 
-function renderNutrient(nutrientData) {
+  function renderNutrient(nutrientData) {
 //wrap in span to do styling for below
-    return '<li class="nutrient-item js-nutrient-item">' + nutrientData.name + ": " + nutrientData.value + "</li>"
-
+return '<li class="nutrient-item js-nutrient-item">' + nutrientData.name + ": " + nutrientData.value + "</li>"
 }
 
 function renderFoodDetails() {
@@ -30,21 +29,21 @@ function renderFoodDetails() {
   $(".js-nutrient-details").html(nutrientMarkup.join(""));
 
 }
-  function displaySearchResults() {
-    var resultsMarkup = state.searchResults.map(renderSearchResult);
+function displaySearchResults() {
+  var resultsMarkup = state.searchResults.map(renderSearchResult);
 /*another way to write this: 
     var resultsMarkupItems = state.searchResults.map(...);
     var resultsMarkup = resultsMarkupItems.join('');*/
     $(".js-search-results").html(resultsMarkup.join(""));
   }
 //state rendering functions
-  function onSearch(searchQuery) {
+function onSearch(searchQuery) {
 
-    $.getJSON(SEARCH_API_URL, { q: searchQuery }, function(response) {
-      state.searchResults = response.list.item;
-      displaySearchResults();
-    });
-  }
+  $.getJSON(SEARCH_API_URL, { q: searchQuery }, function(response) {
+    state.searchResults = response.list.item;
+    displaySearchResults();
+  });
+}
   //event listeners
   $('.js-search-form').on('submit', function(event) {
   //this is saying when I click on GO, the follwing with happen
@@ -55,9 +54,8 @@ function renderFoodDetails() {
   var $target = $(event.currentTarget);
   var searchQuery = $target.find(".js-search-text").val();
 
-     onSearch(searchQuery);
-      //renderSearchResult(data);
-    });
+  onSearch(searchQuery);
+});
 
   $(".js-search-results").on("click", ".js-search-results-item", function(event) {
     event.preventDefault();
@@ -68,7 +66,7 @@ function renderFoodDetails() {
     $(".js-details-view").removeClass("hidden");
     
 
-  $.getJSON(SINGLE_FOOD_API_URL, { ndbno: ndbno }, function(response) {
+    $.getJSON(SINGLE_FOOD_API_URL, { ndbno: ndbno }, function(response) {
      
       var foodData = response.report.food;
       var foodName = foodData.name;
@@ -80,16 +78,19 @@ function renderFoodDetails() {
 
       });
 
-//console.log(foodData.nutrients); //LOG THIS TO FIND THE UNIT TO ADD
-
       state.selectedFood = {
         name: foodName,
         nutrients: foodNutrients,
 
       };
 
-  renderFoodDetails();
+      renderFoodDetails();
 
+    });
+
+    $(".js-back-to-search-results").on("click", function(event) {
+      $(".js-home-view").removeClass("hidden");
+      $(".js-details-view").addClass("hidden");
     });
   });
 });
