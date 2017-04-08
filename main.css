@@ -167,7 +167,7 @@ nav {
 }
 
 .back-button {
-	font-size: 16px;
+	font-size: 20px;
 	border-radius: 20px;
 	color: #4FFBEF;
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -209,7 +209,7 @@ nav {
 }
 
 h1 {
-	font-size: 80px;
+	font-size: 88px;
 	color: #4FFBEF; 
 	text-align: center;
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -233,10 +233,11 @@ form {
 
 h3 {
 
-	color: white;
+	color: #4FFBEF;
 	font-size: 46px;
 	font-family: 'Wire One', sans-serif;
-	text-shadow: -1px 0 teal, 0 1px teal, 1px 0 teal, 0 -1px teal;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	text-align: center;
+
 
 }
