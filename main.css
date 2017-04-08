@@ -84,8 +84,6 @@ html {
 	font-size: 48px;
 	font-family: 'Wire One', sans-serif;
 	display: block;
-
-
 }
 
 ::-webkit-input-placeholder {
@@ -193,12 +191,12 @@ nav {
 }
 
 .food-name-title {
-
+	font-family: 'Chela One', cursive;
 	padding: 20px;
 	margin: auto;
 	text-align: center;
 	max-width: 90%;
-	font-size: 52px;
+	font-size: 64px;
 	color: teal; 
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	font-weight: bold;
@@ -207,6 +205,7 @@ nav {
 
 .search-button:focus {
 	outline: none;
+
 }
 
 h1 {
@@ -234,9 +233,9 @@ form {
 
 h3 {
 
-	color: #4FFBEF;
-	font-size: 46px;
-	font-family: 'Wire One', sans-serif;
+	color: white;
+	font-size: 36px;
+	font-family: 'Chela One', cursive;
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	text-align: center;
 
