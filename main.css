@@ -22,6 +22,7 @@ html {
 	border-radius: 40px;
 	padding: 10px;
 	box-sizing: border-box;
+	-webkit-animation: fadein 2s;
 
 }
 
