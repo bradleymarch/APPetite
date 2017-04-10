@@ -23,7 +23,6 @@ html {
 	padding: 10px;
 	box-sizing: border-box;
 	-webkit-animation: fadein 2s;
-
 }
 
 .hidden {
@@ -38,6 +37,7 @@ html {
 
 
 .search-results-item {
+
 	margin: auto;
 }
 
@@ -45,7 +45,6 @@ html {
 	text-align: center;
 	margin-left: 16px;
 	padding-bottom: 10px;
-
 }
 
 .nutrient-details, .search-results {
@@ -100,8 +99,6 @@ html {
 	color: #4FFBEF;
 	font-size: 28px;
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-
-
 }
 
 .logo-subtitle {
@@ -115,7 +112,6 @@ html {
 	font-weight: bold;
 	color: white;
 	font-size: 28px;
-
 }
 
 .home-link {
@@ -130,7 +126,6 @@ html {
 	border-radius: 20px;
 	font-family: 'Russo One', sans-serif;
 	width: 200px;
-
 }
 
 .search-text:focus {
@@ -140,7 +135,6 @@ html {
 nav {
 	width: 150px;
 	padding-right: ;
-
 }
 
 .search-button {
@@ -156,13 +150,13 @@ nav {
 	box-shadow: 0 3px 0 teal;
 	box-sizing: border-box;
 	padding-bottom: 10px;
+	cursor: pointer;
 }
 
 .search-button:active {
 
 	box-shadow: 0 1px 0 teal;
 	transform: translateY(2px);
-
 }
 
 .back-button {
@@ -177,6 +171,7 @@ nav {
 	box-sizing: border-box;
 	margin: 30px auto 0;
 	display: block;
+	cursor: pointer;
 }
 
 
@@ -200,12 +195,11 @@ nav {
 	color: teal; 
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	font-weight: bold;
-
 }
 
 .search-button:focus {
-	outline: none;
 
+	outline: none;
 }
 
 h1 {
@@ -214,7 +208,6 @@ h1 {
 	text-align: center;
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	margin: 40px;
-
 }
 
 h2 {
@@ -223,7 +216,6 @@ h2 {
 	color: white;
 	text-align: center;
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-
 }
 
 form {
@@ -238,6 +230,4 @@ h3 {
 	font-family: 'Chela One', cursive;
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	text-align: center;
-
-
 }
