@@ -3,7 +3,6 @@ html {
 
 
 	font-family: 'Russo One', sans-serif;
-	background-color: #008080;
 	background: url("dining.jpg") no-repeat center center fixed;
 	-webkit-animation: fadein 2s;
 	-webkit-background-size: cover;
@@ -42,9 +41,12 @@ html {
 }
 
 .search-form {
-	text-align: center;
+	
 	margin-left: 16px;
 	padding-bottom: 10px;
+
+
+
 }
 
 .nutrient-details, .search-results {
@@ -65,23 +67,23 @@ html {
 .search-results-item, .nutrient-item {
 	padding-bottom: 20px;
 	margin: auto;
-	color: #4FFBEF; 
+	color: white; 
 
 }
 
 .nutrient-item { 
 	color: white;
-	font-size: 54px;
+	font-size: 28px;
 	font-weight: bold;
-	font-family: 'Wire One', sans-serif;
+	font-family: 'Roboto', sans-serif;	
 	display: block;
 
 }
 .search-results-item {
 	cursor: pointer;
 	text-decoration: none;
-	font-size: 48px;
-	font-family: 'Wire One', sans-serif;
+	font-size: 24px;
+	font-family: 'Roboto', sans-serif;	
 	display: block;
 }
 
@@ -103,7 +105,7 @@ html {
 
 .logo-subtitle {
 	display: inline-block;
-	font-family: 'Wire One', sans-serif;
+	font-family: 'Roboto', sans-serif;	
 	text-align: center;
 	text-decoration: none;
 	box-sizing: border-box;
@@ -111,20 +113,21 @@ html {
 	padding-bottom: 15px;
 	font-weight: bold;
 	color: white;
-	font-size: 28px;
+	font-size: 15px;
 }
 
 .home-link {
 	text-decoration: none;
-	color: #4FFBEF;
+	color: #48CF85;
 }
 
 .search-text {
-	text-align: center;
+	
+	padding-left: 8px;
 	font-size: 20px;
 	margin-right: 5px;
-	border-radius: 20px;
-	font-family: 'Russo One', sans-serif;
+	border-radius: 4px;
+	font-family: 'Roboto', sans-serif;	
 	width: 200px;
 }
 
@@ -140,34 +143,34 @@ nav {
 .search-button {
 
 	font-size: 20px;
-	border-radius: 20px;
-	color: #4FFBEF;
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	border-radius: 4px;
+	color: #4898CF ;
+	/*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
 	background-color: #F4F8F8;
 	width: 76px;
 	font-family: 'Russo One', sans-serif;
 	transition: all .1s linear;
-	box-shadow: 0 3px 0 teal;
+	box-shadow: 0 .4px 0 black;
 	box-sizing: border-box;
-	padding-bottom: 10px;
+	/*padding-bottom: 10px;*/
 	cursor: pointer;
 }
 
 .search-button:active {
 
-	box-shadow: 0 1px 0 teal;
-	transform: translateY(2px);
+	box-shadow: 0 .4px 0 black;
+	transform: translateY(1px);
 }
 
 .back-button {
 	font-size: 20px;
-	border-radius: 20px;
-	color: #4FFBEF;
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	border-radius: 4px;
+	color: #4898CF;
+	/*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
 	background-color: #F4F8F8;
 	font-family: 'Russo One', sans-serif;
 	transition: all .1s linear;
-	box-shadow: 0 3px 0 teal;
+	box-shadow: 0 .4px 0 black;
 	box-sizing: border-box;
 	margin: 30px auto 0;
 	display: block;
@@ -177,8 +180,8 @@ nav {
 
 .back-button:active {
 
-	box-shadow: 0 1px 0 teal;
-	transform: translateY(2px);
+	box-shadow: 0 .4px 0 black;
+	transform: translateY(1px);
 }
 
 .back-button:focus {
@@ -191,8 +194,8 @@ nav {
 	margin: auto;
 	text-align: center;
 	max-width: 90%;
-	font-size: 64px;
-	color: teal; 
+	font-size: 48px;
+	color: #48CF85; 
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	font-weight: bold;
 }
@@ -203,8 +206,8 @@ nav {
 }
 
 h1 {
-	font-size: 88px;
-	color: #4FFBEF; 
+	font-size: 92px;
+	color: #4898CF; 
 	text-align: center;
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	margin: 40px;
@@ -212,7 +215,7 @@ h1 {
 
 h2 {
 
-	font-size: 24px;
+	font-size: 42px;
 	color: white;
 	text-align: center;
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -226,9 +229,13 @@ form {
 h3 {
 
 	color: white;
-	font-size: 18px;
-	font-family: 'Russo One', sans-serif;
+	font-size: 24px;
+	font-family: 'Roboto', sans-serif;	
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	text-align: center;
 	font-style: italic;
+	font-weight: bold;
+
 }
+
+
