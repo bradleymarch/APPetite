@@ -144,9 +144,9 @@ nav {
 
 	font-size: 20px;
 	border-radius: 4px;
-	color: #48CF85 ;
+	color: white;
 	/*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
-	background-color: #F4F8F8;
+	background-color: #48CF85;
 	width: 76px;
 	font-family: 'Russo One', sans-serif;
 	transition: all .1s linear;
@@ -165,9 +165,9 @@ nav {
 .back-button {
 	font-size: 20px;
 	border-radius: 4px;
-	color: #4898CF;
+	color: white;
 	/*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
-	background-color: #F4F8F8;
+	background-color: #48CF85;
 	font-family: 'Russo One', sans-serif;
 	transition: all .1s linear;
 	box-shadow: 0 .4px 0 black;
