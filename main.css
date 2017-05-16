@@ -3,26 +3,46 @@ html {
 
 
 	font-family: 'Russo One', sans-serif;
-	background: url("dining.jpg") no-repeat center center fixed;
+	background: rgba(0,0,0,0.50) url("dining.jpg") no-repeat center center fixed;
 	-webkit-animation: fadein 2s;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+  	background-size: 100vw 100vh;
 }
 
 
 .overlay {
-
+	position: relative;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0,0,0,0.33);
 	margin: auto;
 	border-radius: 40px;
 	padding: 10px;
 	box-sizing: border-box;
-	-webkit-animation: fadein 2s;
+	display: block;
+	-webkit-animation: fadein 0.25s;
+	  background-color: rgba(0, 0, 0, 0.50);
+
 }
+
+.overlay::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('dining.jpg');
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  background-position: center center;
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.50);
+  filter: blur(5px);
+  display: block;
+  z-index: -1;
+  -webkit-animation: fadein 2s;
+
+}
+
 
 .hidden {
 
@@ -100,8 +120,7 @@ html {
 	font-weight: bold;
 	color: #4FFBEF;
 	font-size: 28px;
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);}
 
 .logo-subtitle {
 	display: inline-block;
@@ -209,7 +228,7 @@ h1 {
 	font-size: 92px;
 	color: #4898CF; 
 	text-align: center;
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);	
 	margin: 40px;
 }
 
@@ -218,8 +237,7 @@ h2 {
 	font-size: 42px;
 	color: white;
 	text-align: center;
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);}
 
 form {
 	padding-top: 12px;
@@ -231,8 +249,7 @@ h3 {
 	color: white;
 	font-size: 24px;
 	font-family: 'Roboto', sans-serif;	
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-	text-align: center;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);	text-align: center;
 	font-style: italic;
 	font-weight: bold;
 
