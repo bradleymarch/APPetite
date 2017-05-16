@@ -107,6 +107,15 @@ html {
 	display: block;
 }
 
+.search-results-item:hover {
+	cursor: pointer;
+	text-decoration: none;
+	font-size: 24px;
+	font-family: 'Roboto', sans-serif;	
+	display: block;
+	color: #4898CF;
+}
+
 ::-webkit-input-placeholder {
 	color: #D4D3D3;
 }
