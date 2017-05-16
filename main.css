@@ -133,7 +133,8 @@ html {
 	font-weight: bold;
 	color: white;
 	font-size: 15px;
-}
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);}
+
 
 .home-link {
 	text-decoration: none;
@@ -167,25 +168,37 @@ nav {
 	/*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
 	background-color: #48CF85;
 	width: 76px;
-	font-family: 'Russo One', sans-serif;
 	transition: all .1s linear;
 	box-shadow: 0 .4px 0 black;
 	box-sizing: border-box;
 	/*padding-bottom: 10px;*/
 	cursor: pointer;
+	font-family: 'Roboto', sans-serif;	
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
+
 }
 
 .search-button:active {
 
 	box-shadow: 0 .4px 0 black;
 	transform: translateY(1px);
+	font-family: 'Roboto', sans-serif;	
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
+
 }
+
+.search-button:focus {
+
+	outline: none;
+	font-family: 'Roboto', sans-serif;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
+}	
 
 .back-button {
 	font-size: 20px;
 	border-radius: 4px;
 	color: white;
-	/*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
 	background-color: #48CF85;
 	font-family: 'Russo One', sans-serif;
 	transition: all .1s linear;
@@ -194,6 +207,7 @@ nav {
 	margin: 30px auto 0;
 	display: block;
 	cursor: pointer;
+	font-family: 'Roboto', sans-serif;	
 }
 
 
@@ -201,10 +215,16 @@ nav {
 
 	box-shadow: 0 .4px 0 black;
 	transform: translateY(1px);
+	font-family: 'Roboto', sans-serif;	
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
+
 }
 
 .back-button:focus {
 	outline: none;
+	font-family: 'Roboto', sans-serif;	
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
+
 }
 
 .food-name-title {
@@ -215,13 +235,8 @@ nav {
 	max-width: 90%;
 	font-size: 48px;
 	color: #48CF85; 
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
 	font-weight: bold;
-}
-
-.search-button:focus {
-
-	outline: none;
 }
 
 h1 {
@@ -247,10 +262,10 @@ form {
 h3 {
 
 	color: white;
-	font-size: 24px;
+	font-size: 20px;
 	font-family: 'Roboto', sans-serif;	
 	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);	text-align: center;
-	font-style: italic;
+	
 	font-weight: bold;
 
 }
