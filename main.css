@@ -158,6 +158,8 @@ html {
 	border-radius: 4px;
 	font-family: 'Roboto', sans-serif;	
 	width: 200px;
+	height: 39px;
+
 }
 
 .search-text:focus {
@@ -184,6 +186,9 @@ nav {
 	cursor: pointer;
 	font-family: 'Roboto', sans-serif;	
 	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
+	height: 45px;
+	width: 80px;
+
 
 }
 
@@ -207,6 +212,8 @@ nav {
 	font-size: 20px;
 	border-radius: 4px;
 	color: white;
+	height: 45px;
+	width: 80px;
 	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
 	background-color: #48CF85;
 	font-family: 'Russo One', sans-serif;
