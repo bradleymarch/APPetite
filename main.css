@@ -7,9 +7,40 @@ html {
 	-webkit-animation: fadein 2s;
   	background-size: 100vw 100vh;
 }
+.nutrient-item-overlay {
+position: relative;
+	width: 80%;
+	height: 100%;
+	margin: auto;
+	border-radius: 40px;
+	padding: 10px;
+	box-sizing: border-box;
+	display: block;
+	-webkit-animation: fadein 0.25s;
+	  background-color: rgba(0, 0, 0, 0.5);
+
+}
+.nutrient-item-overlay::before {
+ content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('dining.jpg');
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  background-position: center center;
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.50);
+  filter: blur(5px);
+  display: block;
+  z-index: -1;
+  -webkit-animation: fadein .25s;
 
 
-.overlay {
+}
+.search-results-overlay {
 	position: relative;
 	width: 100%;
 	height: 100%;
@@ -19,11 +50,11 @@ html {
 	box-sizing: border-box;
 	display: block;
 	-webkit-animation: fadein 0.25s;
-	  background-color: rgba(0, 0, 0, 0.50);
+	  background-color: rgba(0, 0, 0, 0.5);
 
 }
 
-.overlay::before {
+.search-results-overlay::before {
   content: "";
   position: absolute;
   left: 0;

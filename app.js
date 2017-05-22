@@ -88,7 +88,7 @@ function onSearch(searchQuery) {
 
     });
 
-    $(".js-back-to-search-results").on("click", function(event) {
+      $(".js-back-to-search-results").on("click", function(event) {
       $(".js-home-view").removeClass("hidden");
       $(".js-details-view").addClass("hidden");
     });
