@@ -1,8 +1,7 @@
 
 html {
 
-
-	font-family: 'Russo One', sans-serif;
+	font-family: 'Asul', sans-serif;
 	background: rgba(0,0,0,0.50) url("dining.jpg") no-repeat center center fixed;
 	-webkit-animation: fadein 2s;
   	background-size: 100vw 100vh;
@@ -74,6 +73,23 @@ html {
 
 }
 
+@keyframes rotateInDownLeft {
+  from {
+    transform-origin: left bottom;
+    transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0;
+  }
+
+  to {
+    transform-origin: left bottom;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.rotateInDownLeft {
+  animation-name: rotateInDownLeft;
+}
 
 .hidden {
 
@@ -126,7 +142,7 @@ html {
 	color: white;
 	font-size: 28px;
 	font-weight: bold;
-	font-family: 'Roboto', sans-serif;	
+	font-family: 'Chivo', sans-serif;	
 	display: block;
 
 }
@@ -134,7 +150,7 @@ html {
 	cursor: pointer;
 	text-decoration: none;
 	font-size: 24px;
-	font-family: 'Roboto', sans-serif;	
+	font-family: 'Chivo', sans-serif;	
 	display: block;
 }
 
@@ -142,7 +158,7 @@ html {
 	cursor: pointer;
 	text-decoration: none;
 	font-size: 24px;
-	font-family: 'Roboto', sans-serif;	
+	font-family: 'Chivo', sans-serif;	
 	display: block;
 	color: #4898CF;
 }
@@ -160,11 +176,12 @@ html {
 	font-weight: bold;
 	color: #4FFBEF;
 	font-size: 28px;
-	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);}
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+}
 
 .logo-subtitle {
 	display: inline-block;
-	font-family: 'Roboto', sans-serif;	
+	font-family: 'Chivo', sans-serif;	
 	text-align: center;
 	text-decoration: none;
 	box-sizing: border-box;
@@ -172,9 +189,9 @@ html {
 	padding-bottom: 15px;
 	font-weight: bold;
 	color: white;
-	font-size: 15px;
-	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);}
-
+	font-size: 13px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+}
 
 .home-link {
 	text-decoration: none;
@@ -184,10 +201,10 @@ html {
 .search-text {
 	
 	padding-left: 8px;
-	font-size: 20px;
+	font-size: 18px;
 	margin-right: 5px;
 	border-radius: 4px;
-	font-family: 'Roboto', sans-serif;	
+	font-family: 'Chivo', sans-serif;	
 	width: 200px;
 	height: 39px;
 
@@ -215,30 +232,30 @@ nav {
 	box-sizing: border-box;
 	padding-bottom: 10px;*/
 	cursor: pointer;
-	font-family: 'Roboto', sans-serif;	
+	font-family: 'Chivo', sans-serif;	
 	/*text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);*/
 	height: 44px;
 	width: 80px;
-
+	outline: none;
 
 }
-
+/*
 .search-button:active {
 
 	box-shadow: 0 .4px 0 black;
 	transform: translateY(1px);
-	font-family: 'Roboto', sans-serif;	
-	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
+	font-family: 'Chivo', sans-serif;	
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
 
 }
 
 .search-button:focus {
 
 	outline: none;
-	font-family: 'Roboto', sans-serif;
-	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
+	font-family: 'Chivo', sans-serif;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
 }	
-
+*/
 .back-button {
 	font-size: 16px;
 	border-radius: 4px;
@@ -247,74 +264,75 @@ nav {
 	width: 80px;
 	/*text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);*/
 	background-color: #48CF85;
-	font-family: 'Russo One', sans-serif;
 	/*transition: all .1s linear;
 	box-shadow: 0 .4px 0 black;*/
 	box-sizing: border-box;
 	margin: 30px auto 0;
 	display: block;
 	cursor: pointer;
-	font-family: 'Roboto', sans-serif;	
+	outline: none;
+	font-family: 'Chivo', sans-serif;	
 }
 
-
+/*
 .back-button:active {
 
 	box-shadow: 0 .4px 0 black;
 	transform: translateY(1px);
-	font-family: 'Roboto', sans-serif;	
-	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
+	font-family: 'Chivo', sans-serif;	
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
 
 }
 
 .back-button:focus {
 	outline: none;
-	font-family: 'Roboto', sans-serif;	
-	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
+	font-family: 'Chivo', sans-serif;	
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
 
 }
-
+*/
 .food-name-title {
-	font-family: 'Russo One', sans-serif;
+	font-family: 'Asul', sans-serif;
 	padding: 20px;
 	margin: auto;
 	text-align: center;
 	max-width: 90%;
 	font-size: 48px;
 	color: #48CF85; 
-	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
 	font-weight: bold;
 }
 
-h1 {
+.main-heading {
 	font-size: 92px;
 	color: #4898CF; 
 	text-align: center;
-	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);	
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
 	margin: 40px;
 }
 
-h2 {
+.heading-subtitle {
 
 	font-size: 32px;
 	color: white;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Chivo', sans-serif;
 	text-align: center;
-	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);}
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+}
 
 form {
 	padding-top: 12px;
 	text-align: center;
 }
 
-h3 {
+.heading-sub-sub-title {
 
 	color: white;
-	font-size: 20px;
-	font-family: 'Roboto', sans-serif;	
-	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);	text-align: center;
-	
-	font-weight: bold;
+	font-size: 22px;
+	font-family: 'Chivo', sans-serif;	
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+	text-align: center;
+	font-weight: none;
 
 }
 
