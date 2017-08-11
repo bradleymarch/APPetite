@@ -164,7 +164,7 @@ html {
 }
 
 ::-webkit-input-placeholder {
-	color: #4898CF;
+	
 	opacity: 0.75;
 }
 
@@ -207,12 +207,11 @@ html {
 	height: 39px;
 	background: transparent;
 	outline: none;
-	color: #4898CF;
 	text-decoration: none;
 	border-left: none;
 	border-right: none;
 	border-top: none;
-	border-bottom: 4px solid #48CF85;
+	border-bottom: 3px solid #48CF85;
 
 
 }
