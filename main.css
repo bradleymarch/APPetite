@@ -108,7 +108,7 @@ html {
 }
 
 .search-form {
-	
+
 	margin-left: 16px;
 	padding-bottom: 10px;
 
@@ -134,15 +134,15 @@ html {
 .search-results-item, .nutrient-item {
 	padding-bottom: 20px;
 	margin: auto;
-	color: white; 
+	color: white;
 
 }
 
-.nutrient-item { 
+.nutrient-item {
 	color: white;
 	font-size: 28px;
 	font-weight: bold;
-	font-family: 'Chivo', sans-serif;	
+	font-family: 'Chivo', sans-serif;
 	display: block;
 
 }
@@ -150,7 +150,7 @@ html {
 	cursor: pointer;
 	text-decoration: none;
 	font-size: 24px;
-	font-family: 'Chivo', sans-serif;	
+	font-family: 'Chivo', sans-serif;
 	display: block;
 }
 
@@ -158,13 +158,14 @@ html {
 	cursor: pointer;
 	text-decoration: none;
 	font-size: 24px;
-	font-family: 'Chivo', sans-serif;	
+	font-family: 'Chivo', sans-serif;
 	display: block;
 	color: #4898CF;
 }
 
 ::-webkit-input-placeholder {
-	color: #D4D3D3;
+	color: #4898CF;
+	opacity: 0.75;
 }
 
 .logo {
@@ -176,21 +177,18 @@ html {
 	font-weight: bold;
 	color: #4FFBEF;
 	font-size: 28px;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
 }
 
 .logo-subtitle {
 	display: inline-block;
-	font-family: 'Chivo', sans-serif;	
+	font-family: 'Chivo', sans-serif;
 	text-align: center;
 	text-decoration: none;
 	box-sizing: border-box;
 	padding-left: 15px;
 	padding-bottom: 15px;
-	font-weight: bold;
-	color: white;
+	color: #4898CF;
 	font-size: 13px;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
 }
 
 .home-link {
@@ -199,14 +197,23 @@ html {
 }
 
 .search-text {
-	
+
 	padding-left: 8px;
-	font-size: 18px;
+	font-size: 24px;
 	margin-right: 5px;
-	border-radius: 4px;
-	font-family: 'Chivo', sans-serif;	
+	padding-left: 20px;
+	font-family: 'Chivo', sans-serif;
 	width: 200px;
 	height: 39px;
+	background: transparent;
+	outline: none;
+	color: #4898CF;
+	text-decoration: none;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom: 4px solid #48CF85;
+
 
 }
 
@@ -223,74 +230,36 @@ nav {
 
 	font-size: 16px;
 	border-radius: 4px;
-	color: white;
-	/*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
-	background-color: #48CF85;
+	color: #48CF85;
+	background-color: white;
 	width: 76px;
-	/*transition: all .1s linear;
-	box-shadow: 0 .4px 0 black;
-	box-sizing: border-box;
-	padding-bottom: 10px;*/
 	cursor: pointer;
-	font-family: 'Chivo', sans-serif;	
-	/*text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);*/
+	font-family: 'Chivo', sans-serif;
 	height: 44px;
 	width: 80px;
 	outline: none;
-
-}
-/*
-.search-button:active {
-
-	box-shadow: 0 .4px 0 black;
-	transform: translateY(1px);
-	font-family: 'Chivo', sans-serif;	
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+	border: 2px solid #48CF85;
+	text-decoration: none;
 
 }
 
-.search-button:focus {
-
-	outline: none;
-	font-family: 'Chivo', sans-serif;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
-}	
-*/
 .back-button {
 	font-size: 16px;
 	border-radius: 4px;
-	color: white;
+	color: #48CF85;
 	height: 45px;
 	width: 80px;
-	/*text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);*/
-	background-color: #48CF85;
-	/*transition: all .1s linear;
-	box-shadow: 0 .4px 0 black;*/
+	background-color: white;
 	box-sizing: border-box;
 	margin: 30px auto 0;
 	display: block;
 	cursor: pointer;
 	outline: none;
-	font-family: 'Chivo', sans-serif;	
+	text-decoration: none;
+	border: 2px solid #48CF85;
+	font-family: 'Chivo', sans-serif;
 }
 
-/*
-.back-button:active {
-
-	box-shadow: 0 .4px 0 black;
-	transform: translateY(1px);
-	font-family: 'Chivo', sans-serif;	
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
-
-}
-
-.back-button:focus {
-	outline: none;
-	font-family: 'Chivo', sans-serif;	
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
-
-}
-*/
 .food-name-title {
 	font-family: 'Asul', sans-serif;
 	padding: 20px;
@@ -298,16 +267,15 @@ nav {
 	text-align: center;
 	max-width: 90%;
 	font-size: 48px;
-	color: #48CF85; 
+	color: #48CF85;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
 	font-weight: bold;
 }
 
 .main-heading {
 	font-size: 92px;
-	color: #4898CF; 
+	color: #4898CF;
 	text-align: center;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
 	margin: 40px;
 }
 
@@ -328,12 +296,10 @@ form {
 .heading-sub-sub-title {
 
 	color: white;
-	font-size: 22px;
-	font-family: 'Chivo', sans-serif;	
+	font-size: 16px;
+	font-family: 'Chivo', sans-serif;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
 	text-align: center;
 	font-weight: none;
 
 }
-
-

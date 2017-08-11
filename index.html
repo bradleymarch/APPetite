@@ -4,10 +4,8 @@
 	<title>APPetite.</title>
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<link href="https://fonts.googleapis.com/css?family=Asul|Chivo" rel="stylesheet">
-
   <link rel="icon" type="image/png" href="food.png"/>
 </head>
-
 <body>
   <nav class="site-nav">
     <div class="site-branding">
@@ -17,28 +15,23 @@
       <span class="logo-subtitle">What's in my food?</span>
     </div>
   </nav>
-
-  <section class="view js-home-view">
-    <h1 class="main-heading rotateInDownLeft">APPetite.</h1>
-    <h2 class="heading-subtitle">The Fastest Food Fact Finder.</h2>
-    <h3 class="heading-sub-sub-title">Food Facts from the USDA Nutrient Database</h3>
-    <form class="search-form js-search-form">
-     <input class="js-search-text search-text" type="text" name="food-finder" placeholder="Search for food here.">
-     <button class="js-search-button search-button" type="submit">Search</button>
-   </form>
-
-   <!-- <h3 class="food-name-title js-food-name-title hidden">SEARCH RESULTS</h3> -->
-   <ul class="search-results js-search-results hidden search-results-overlay">
-     <!-- empty ul for search results -->
-   </ul>
- </section>
- <section class="view js-details-view hidden nutrient-item-overlay">
-  <h2 class="food-name-title js-food-name-title"></h2>
-  <button class="back-to-search-results js-back-to-search-results back-button js-back-button">Back</button>
-  <ul class="nutrient-details js-nutrient-details">
-  </ul>
-</section>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src='app.js'></script>
+	  <section class="view js-home-view">
+	    <h1 class="main-heading rotateInDownLeft">APPetite.</h1>
+	    <h2 class="heading-subtitle">The Fastest Food Fact Finder.</h2>
+	    <h3 class="heading-sub-sub-title">Food Facts from the USDA Nutrient Database</h3>
+	    <form class="search-form js-search-form">
+	     <input class="js-search-text search-text" type="text" name="food-finder" placeholder="i.e. Big Mac">
+	     <button class="js-search-button search-button" type="submit">Search</button>
+	   </form>
+	   	<ul class="search-results js-search-results hidden search-results-overlay"></ul>
+	 </section>
+	 <section class="view js-details-view hidden nutrient-item-overlay">
+	  <h2 class="food-name-title js-food-name-title"></h2>
+	  <button class="back-to-search-results js-back-to-search-results back-button js-back-button">Back</button>
+	  <ul class="nutrient-details js-nutrient-details">
+	  </ul>
+	</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src='app.js'></script>
 </body>
 </html>
