@@ -14,9 +14,6 @@ Here is some of the Javascript/jQuery code:
 ```
 function displaySearchResults() {
   var resultsMarkup = state.searchResults.map(renderSearchResult);
-/*another way to write this: 
-    var resultsMarkupItems = state.searchResults.map(...);
-    var resultsMarkup = resultsMarkupItems.join('');*/
     $(".js-search-results").html(resultsMarkup.join(""));
   }
 //state rendering functions
