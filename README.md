@@ -8,7 +8,7 @@ that food result.  All activity remains within a single app URL for the single p
 This app incorporates HTML, CSS, jQuery, and Javascript
 
 
-Here is the live link to it: https://bradleymarch.github.io/capstone1/
+Here is the live link to it: https://bradleymarch.github.io/APPetite
 
 Here is some of the Javascript/jQuery code:
 ```
