@@ -16,7 +16,6 @@ function displaySearchResults() {
   var resultsMarkup = state.searchResults.map(renderSearchResult);
     $(".js-search-results").html(resultsMarkup.join(""));
   }
-//state rendering functions
 function onSearch(searchQuery) {
 
   $.getJSON(SEARCH_API_URL, { q: searchQuery }, function(response) {
@@ -24,7 +23,6 @@ function onSearch(searchQuery) {
     displaySearchResults();
   });
 }
-  //event listeners
   $('.js-search-form').on('submit', function(event) {
   //this is saying when I click on GO, the follwing with happen
   event.preventDefault();
