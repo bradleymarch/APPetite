@@ -10,8 +10,8 @@ This app incorporates HTML, CSS, jQuery, and Javascript
 
 Here is the live link to it: https://bradleymarch.github.io/capstone1/
 
-Here is some of the Javascript code:
-
+Here is some of the Javascript/jQuery code:
+```
 function displaySearchResults() {
   var resultsMarkup = state.searchResults.map(renderSearchResult);
 /*another way to write this: 
@@ -39,3 +39,4 @@ function onSearch(searchQuery) {
 
   onSearch(searchQuery);
 });
+```
