@@ -11,6 +11,11 @@ Here is the live link to it: https://bradleymarch.github.io/APPetite
 
 ![Alt text](/appetiteMobile.png)
 
+Next steps...
+    1. A sorting feature will be added for searches
+    2. A user may be added for additional perks
+    3. Previous search history may be logged for users
+
 Here is some of the Javascript/jQuery code:
 ```
 function displaySearchResults() {
