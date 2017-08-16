@@ -7,7 +7,7 @@ that food result.  All activity remains within a single app URL for this single 
 
 This app incorporates HTML, CSS, jQuery, and Javascript
 
-![Alt text](/food.png)
+![Alt text](/appetiteMobile.png)
 
 Here is the live link to it: https://bradleymarch.github.io/APPetite
 
