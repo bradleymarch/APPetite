@@ -164,7 +164,7 @@ html {
 }
 
 ::-webkit-input-placeholder {
-	
+
 	opacity: 0.75;
 }
 
@@ -227,11 +227,11 @@ nav {
 
 .search-button {
 
-	font-size: 16px;
+	font-size: 20px;
 	border-radius: 4px;
 	color: #48CF85;
 	background-color: white;
-	width: 76px;
+	width: 100px;
 	cursor: pointer;
 	font-family: 'Chivo', sans-serif;
 	height: 44px;
@@ -243,11 +243,11 @@ nav {
 }
 
 .back-button {
-	font-size: 16px;
+	font-size: 20px;
 	border-radius: 4px;
 	color: #48CF85;
 	height: 45px;
-	width: 80px;
+	width: 100px;
 	background-color: white;
 	box-sizing: border-box;
 	margin: 30px auto 0;
@@ -280,7 +280,7 @@ nav {
 
 .heading-subtitle {
 
-	font-size: 32px;
+	font-size: 38px;
 	color: white;
 	font-family: 'Chivo', sans-serif;
 	text-align: center;
@@ -295,10 +295,9 @@ form {
 .heading-sub-sub-title {
 
 	color: white;
-	font-size: 16px;
+	font-size: 30px;
 	font-family: 'Chivo', sans-serif;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
 	text-align: center;
 	font-weight: none;
-
 }
