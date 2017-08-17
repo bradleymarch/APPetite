@@ -9,7 +9,10 @@ This app incorporates HTML, CSS, jQuery, and Javascript
 
 Here is the live link to it: https://bradleymarch.github.io/APPetite
 
-![Alt text](/appetiteMobile.png)
+![Landing Page Photo](/appetiteMobile.png)
+
+Here is the preliminary sketch of the APP architecture:
+![User Flow Sketch](/APPetiteSketch.jpg)
 
 Next steps...
     1. A sorting feature will be added for searches
