@@ -33,7 +33,6 @@ function onSearch(searchQuery) {
   });
 }
   $('.js-search-form').on('submit', function(event) {
-  //this is saying when I click on GO, the follwing with happen
   event.preventDefault();
 
   $(".js-search-results").removeClass("hidden");
