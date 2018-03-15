@@ -1,8 +1,8 @@
 $(function() {
 
   var DATA_GOV_API_KEY = hiddenKey;
-  var SEARCH_API_URL = hiddenVar;
-  var SINGLE_FOOD_API_URL = hiddenVar2;
+  var SEARCH_API_URL = hiddenURL;
+  var SINGLE_FOOD_API_URL = hiddenURL2;
 
   var state = {
 
