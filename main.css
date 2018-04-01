@@ -166,6 +166,8 @@ html {
 ::-webkit-input-placeholder {
 
 	opacity: 0.75;
+	color: #4898CF;
+
 }
 
 .logo {
@@ -212,7 +214,7 @@ html {
 	border-right: none;
 	border-top: none;
 	border-bottom: 3px solid #48CF85;
-
+	color: #4898CF;
 
 }
 
@@ -229,17 +231,21 @@ nav {
 
 	font-size: 20px;
 	border-radius: 4px;
+	margin-left: 10px;
 	color: #48CF85;
 	background-color: white;
 	width: 120px;
 	cursor: pointer;
 	font-family: 'Chivo', sans-serif;
 	height: 44px;
-	width: 80px;
+	width: 88px;
 	outline: none;
-	border: 2px solid #48CF85;
 	text-decoration: none;
 
+}
+
+.search-button:hover, .back-button:hover {
+	color: #4898CF;
 }
 
 .back-button {
@@ -255,7 +261,6 @@ nav {
 	cursor: pointer;
 	outline: none;
 	text-decoration: none;
-	border: 2px solid #48CF85;
 	font-family: 'Chivo', sans-serif;
 }
 
