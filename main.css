@@ -102,7 +102,6 @@ html {
 
 
 .search-results-item {
-
 	margin: auto;
 }
 
@@ -110,9 +109,6 @@ html {
 
 	margin-left: 16px;
 	padding-bottom: 10px;
-
-
-
 }
 
 .nutrient-details, .search-results {
@@ -223,11 +219,10 @@ html {
 
 nav {
 	width: 150px;
-	padding-right: ;
 }
 
 .search-button {
-
+	padding: 2px;
 	font-size: 20px;
 	border-radius: 4px;
 	margin-left: 10px;
@@ -248,6 +243,7 @@ nav {
 }
 
 .back-button {
+	padding: 2px;
 	font-size: 20px;
 	border-radius: 4px;
 	color: #48CF85;
