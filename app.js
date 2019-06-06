@@ -1,8 +1,8 @@
 $(function() {
 
    var DATA_GOV_API_KEY = "ts2aIGdCnhQMCUyO4jLJArVfM04Wwe0AehE1PsVB";
-   var SEARCH_API_URL = "https://api.nal.usda.gov/ndb/V2/search/?format=json&max=10&offset=0&api_key=" + DATA_GOV_API_KEY;
-   var SINGLE_FOOD_API_URL = "https://api.nal.usda.gov/ndb/V2/reports/?format=json&api_key=" + DATA_GOV_API_KEY;
+   var SEARCH_API_URL = "https://api.nal.usda.gov/ndb/search/?format=json&max=10&offset=0&api_key=" + DATA_GOV_API_KEY;
+   var SINGLE_FOOD_API_URL = "https://api.nal.usda.gov/ndb/reports/?format=json&api_key=" + DATA_GOV_API_KEY;
    // console.log(SINGLE_FOOD_API_URL);
    var state = {
 
@@ -39,11 +39,25 @@ function displaySearchResults() {
 //state rendering functions
 function onSearch(searchQuery) {
 
-  $.getJSON(SEARCH_API_URL, { q: searchQuery }, function(response) {
-    state.searchResults = response.list.item;
-    displaySearchResults();
-  });
+  $.ajax({
+            headers: { "Accept": "application/json"},
+            type: 'GET',
+            url: SEARCH_API_URL,
+            crossDomain: true,
+            beforeSend: function(xhr){
+                xhr.withCredentials = true;
+          },
+            success: function(response, textStatus, request){
+              state.searchResults = response.list.item;
+              displaySearchResults();
+            },
+            error: function (xhr, status) {
+                  console.log(status)
+            }
+   });
+
 }
+
   //event listeners
   $('.js-search-form').on('submit', function(event) {
   //this is saying when I click on GO, the follwing with happen
