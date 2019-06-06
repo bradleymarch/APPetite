@@ -38,11 +38,11 @@ function displaySearchResults() {
   }
 //state rendering functions
 function onSearch(searchQuery) {
-
+  const q = searchQuery
   $.ajax({
             headers: { "Accept": "application/json"},
             type: 'GET',
-            url: SEARCH_API_URL,
+            url: "https://api.nal.usda.gov/ndb/search/?format=json&q=" + q + "&max=10&offset=0&api_key=" + DATA_GOV_API_KEY,
             crossDomain: true,
             beforeSend: function(xhr){
                 xhr.withCredentials = true;
