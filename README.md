@@ -1,13 +1,13 @@
 This is APPetite, the "what's in my food?" APP.
 
-What's great about this is it pulls up food facts for any particular food in a matter of seconds using data from the USDA Food Database.
+What's great about this is it pulls up food facts for any particular food in a matter of milliseconds using data from the USDA Food Database.
 
 You merely search for a food, the top 10 results pop up, and by selecting a result, you are taken to the nutrient data for
 that food result.  All activity remains within a single app URL for this single page app!
 
 This app incorporates HTML, CSS, jQuery, and Javascript
 
-Here is the live link to it: https://bradleymarch.github.io/APPetite
+Here is the live link to it: https://bradleymarch.com/appetite
 
 ![Landing Page Photo](/appetiteMobile.png)
 
