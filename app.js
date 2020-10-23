@@ -1,8 +1,8 @@
 $(function() {
    
    var DATA_GOV_API_KEY = "secret key";
-   var SEARCH_API_URL = "https://developer.nrel.gov/api/?format=json&max=10&offset=0&api_key=" + DATA_GOV_API_KEY;
-   var SINGLE_FOOD_API_URL = "https://developer.nrel.gov/api/?format=json&api_key=" + DATA_GOV_API_KEY;
+   var SEARCH_API_URL = "search" + DATA_GOV_API_KEY;
+   var SINGLE_FOOD_API_URL = "single food" + DATA_GOV_API_KEY;
    // console.log(SINGLE_FOOD_API_URL);
    var state = {
 
