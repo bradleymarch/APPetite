@@ -1,8 +1,8 @@
 $(function() {
    
    var DATA_GOV_API_KEY = "ajPXxbg5QF2vLNQiTTh3weyQs6lchdkd6rJSEBkw";
-   var SEARCH_API_URL = "https://api.nal.usda.gov/ndb/search/?format=json&max=10&offset=0&api_key=" + DATA_GOV_API_KEY;
-   var SINGLE_FOOD_API_URL = "https://api.nal.usda.gov/ndb/reports/?format=json&api_key=" + DATA_GOV_API_KEY;
+   var SEARCH_API_URL = "https://developer.nrel.gov/api/?format=json&max=10&offset=0&api_key=" + DATA_GOV_API_KEY;
+   var SINGLE_FOOD_API_URL = "https://developer.nrel.gov/api/?format=json&api_key=" + DATA_GOV_API_KEY;
    // console.log(SINGLE_FOOD_API_URL);
    var state = {
 
