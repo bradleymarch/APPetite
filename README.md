@@ -7,8 +7,7 @@ that food result.  All activity remains within a single app URL for this single 
 
 This app incorporates HTML, CSS, jQuery, and Javascript
 
-Here is the live link to it: https://bradleymarch.com/appetite
-
+Here is the live link to it: //The old API setup has been reconfigured, so this is currently not live
 ![Landing Page Photo](/appetiteMobile.png)
 
 Here is the preliminary sketch of the APP architecture:
